@@ -30,6 +30,7 @@ see where your time went, and copy the result straight into a timesheet.
 - **Start with Windows** and **global shortcuts** that work from any app.
 - **Light and dark themes**, 12 Windows accent colors, drag to reorder, and Undo after deleting.
 - **Automatic updates** — digitally signed, installed with one click.
+- **About page** — version, author, links to GitHub and What's new, and every license readable right in the app.
 
 What changed in each version: **[CHANGELOG.md](CHANGELOG.md)** (from 1.1.0 to today).
 
@@ -38,7 +39,11 @@ What changed in each version: **[CHANGELOG.md](CHANGELOG.md)** (from 1.1.0 to to
 | | | |
 | :---: | :---: | :---: |
 | <img src="docs/screenshots/history.png" width="250" alt="History"><br>History | <img src="docs/screenshots/templates.png" width="250" alt="Templates"><br>Templates | <img src="docs/screenshots/compact-dark.png" width="250" alt="Compact view"><br>Compact view |
-| <img src="docs/screenshots/settings.png" width="250" alt="Settings"><br>Settings | <img src="docs/screenshots/edit-time.png" width="250" alt="Edit time"><br>Edit time | <img src="docs/screenshots/mini-window.png" width="250" alt="Mini window"><br>Mini window |
+| <img src="docs/screenshots/settings.png" width="250" alt="Settings"><br>Settings | <img src="docs/screenshots/about.png" width="250" alt="About"><br>About | <img src="docs/screenshots/edit-time.png" width="250" alt="Edit time"><br>Edit time |
+
+<p align="center">
+  <img src="docs/screenshots/mini-window.png" width="320" alt="Mini window"><br>Mini window
+</p>
 
 ## Install
 
