@@ -1,0 +1,36 @@
+# Counts installer downloads across all releases and publishes them for the README badge
+# (stats branch, shields.io endpoint format). Update checks (latest.json) are not counted.
+name: Download count
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Count installer downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          total=$(gh api "repos/$REPO/releases" --paginate \
+            --jq '.[].assets[] | select(.name | test("^StopwatchApplicationSetup.*\\.exe$")) | .download_count' \
+            | awk '{s += $1} END {print s + 0}')
+          echo "Installer downloads: $total"
+          mkdir stats && cd stats
+          printf '{"schemaVersion":1,"label":"downloads","message":"%s","color":"2ea44f"}\n' "$total" > downloads.json
+          # The stats branch always holds a single commit with downloads.json.
+          git init -q -b stats
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add downloads.json
+          git commit -q -m "Download count: $total"
+          git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" stats
