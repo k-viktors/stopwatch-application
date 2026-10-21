@@ -97,5 +97,5 @@ and is never part of this repository.
 
 Stopwatch Application is free to download and use. It is built with
 [Qt for Python (PySide6)](https://www.qt.io/qt-for-python) and Qt, used unmodified under the
-[GNU LGPL v3](https://www.gnu.org/licenses/lgpl-3.0.html). The license texts and source links are
-installed with the app in the `licenses` folder (`THIRD-PARTY-NOTICES.txt`).
+[GNU LGPL v3](https://www.gnu.org/licenses/lgpl-3.0.html). The license texts and source links can be read
+right in the app under **Settings → About**, and are also installed in the `licenses` folder.

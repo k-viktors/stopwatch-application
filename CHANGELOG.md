@@ -2,6 +2,11 @@
 
 All versions of Stopwatch Application. The same list is shown in the app under Settings → What's new.
 
+## 2.5.1 — Oct 21, 2026
+
+- **New:** About page (Settings → About) with the version, the author, links to GitHub and What's new, and every license readable right in the app.
+- **Fixed:** Mini window and pop-ups no longer leave old text and buttons behind when their content changes size (for example when "+1 more running" appears or disappears).
+
 ## 2.5.0 — Oct 21, 2026
 
 - **Improved:** Built on Qt 6 (Qt for Python / PySide6) — a newer, faster Qt with better high-DPI support.
