@@ -47,8 +47,13 @@ What changed in each version: **[CHANGELOG.md](CHANGELOG.md)** (from 1.1.0 to to
 2. Run it and follow the steps. Windows asks for administrator approval.
 3. Open **Stopwatch Application** from the Start menu.
 
-Requires Windows 10 or 11 (64-bit). The installer isn't signed with a commercial certificate yet, so
-Windows SmartScreen may ask once — choose **More info → Run anyway**.
+**Requirements:** Windows 10 (version 1809 or later) or Windows 11, 64-bit.
+
+The installer isn't signed with a commercial certificate yet, so Windows may show *Unknown publisher*
+and SmartScreen may ask once — choose **More info → Run anyway**.
+
+Already installed? The app updates itself — see [Updates and security](#updates-and-security).
+To uninstall, use **Settings → Apps → Installed apps → Stopwatch Application**.
 
 <details>
 <summary>Install from PowerShell instead</summary>
@@ -80,16 +85,17 @@ Timers, settings and history are stored only on your computer, in `%APPDATA%\Sto
 None of it is uploaded — the only thing the app downloads is the update check from this repository.
 Uninstalling asks whether to keep or delete this data.
 
+## Updates and security
+
+The app checks this repository's releases once a day (you can turn this off in Settings) and installs
+a new version with one click: **Settings → Updates → Download & install**. Every release's `latest.json`
+is signed with ECDSA P-256; the app and the install script refuse any update that isn't signed with the
+developer's key, and verify the installer's SHA-256 before running it. The private key is kept offline
+and is never part of this repository.
+
 ## Licenses
 
 Stopwatch Application is free to download and use. It is built with
 [Qt for Python (PySide6)](https://www.qt.io/qt-for-python) and Qt, used unmodified under the
 [GNU LGPL v3](https://www.gnu.org/licenses/lgpl-3.0.html). The license texts and source links are
 installed with the app in the `licenses` folder (`THIRD-PARTY-NOTICES.txt`).
-
-## Updates and security
-
-The app checks this repository's releases once a day (you can turn this off in Settings). Every release's
-`latest.json` is signed with ECDSA P-256; the app and the install script refuse any update that isn't
-signed with the developer's key, and verify the installer's SHA-256 before running it. The private key is
-kept offline and is never part of this repository.
