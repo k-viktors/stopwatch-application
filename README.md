@@ -7,7 +7,7 @@ see where your time went, and copy the result straight into a timesheet.
 &nbsp;
 [![Latest release](https://img.shields.io/github/v/release/k-viktors/stopwatch-application?style=for-the-badge&label=version)](https://github.com/k-viktors/stopwatch-application/releases/latest)
 &nbsp;
-[![Installer downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk-viktors%2Fstopwatch-application%2Fstats%2Fdownloads.json&style=for-the-badge&cacheSeconds=3600)](https://github.com/k-viktors/stopwatch-application/releases)
+[![Installer downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk-viktors%2Fstopwatch-application%2Frefs%2Fheads%2Fstats%2Fdownloads.json&style=for-the-badge&cacheSeconds=3600)](https://github.com/k-viktors/stopwatch-application/releases)
 
 <p align="center">
   <img src="docs/screenshots/main-light.png" width="300" alt="Timers in light mode">
