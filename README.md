@@ -80,6 +80,13 @@ Timers, settings and history are stored only on your computer, in `%APPDATA%\Sto
 None of it is uploaded — the only thing the app downloads is the update check from this repository.
 Uninstalling asks whether to keep or delete this data.
 
+## Licenses
+
+Stopwatch Application is free to download and use. It is built with
+[Qt for Python (PySide6)](https://www.qt.io/qt-for-python) and Qt, used unmodified under the
+[GNU LGPL v3](https://www.gnu.org/licenses/lgpl-3.0.html). The license texts and source links are
+installed with the app in the `licenses` folder (`THIRD-PARTY-NOTICES.txt`).
+
 ## Updates and security
 
 The app checks this repository's releases once a day (you can turn this off in Settings). Every release's

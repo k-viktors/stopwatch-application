@@ -2,6 +2,11 @@
 
 All versions of Stopwatch Application. The same list is shown in the app under Settings → What's new.
 
+## 2.5.0 — Oct 21, 2026
+
+- **Improved:** Built on Qt 6 (Qt for Python / PySide6) — a newer, faster Qt with better high-DPI support.
+- **New:** Licenses entry in the Quick guide; third-party license texts are installed in the licenses folder.
+
 ## 2.4.2 — Oct 21, 2026
 
 - **Improved:** The project now has one public home with the description, screenshots and downloads: github.com/k-viktors/stopwatch-application.
